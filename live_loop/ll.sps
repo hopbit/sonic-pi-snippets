@@ -1,7 +1,7 @@
 # key: ll
-# point_line: 0
-# point_index: 11
+# point_line: 1
+# point_index: 2
 # --
-live_loop : do
-
+live_loop :foo do
+  # your code 
 end
