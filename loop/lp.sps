@@ -1,7 +1,7 @@
 # key: lp
-# point_line: 0
-# point_index: 6
+# point_line: 1
+# point_index: 3
 # --
-loop : do
+loop do
 	
 end
