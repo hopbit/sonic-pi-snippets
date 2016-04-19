@@ -3,10 +3,8 @@
 # point_index: 0
 # --
 
-# WRUG 03
-# -------------------------------------------
-# here's how you can play a chord
-play :c4
-play :e4
-play :g4
-sleep 1
+# WRUG 03 ------------------------
+# zagrajmy akord C-dur w 4 oktawie
+play 60
+play 64
+play 67

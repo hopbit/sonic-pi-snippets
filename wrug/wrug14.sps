@@ -3,11 +3,14 @@
 # point_index: 0
 # --
 
-# WRUG 14
-# -------------------------------------------
-# some samples are included, e.g. drumloops
+# WRUG 14 -------------------------------------------
+# Oprócz wbudowanych syntezatorów, na pokładzie Sonic Pi 
+# znajdziemy też sporo wbudowanych sampli, które można 
+# wykorzystać w swoich kompozycjach
+
 sample :loop_amen
-# ...and you can manipulate them
-sample :loop_amen, rate: 0.5
-sample :loop_amen, rate: 0.5, pitch: 12
-sample :loop_amen, rate: -1.0
+
+# podobnie jak przy syntezatorach, sample można modyfikować
+
+# sample :loop_amen, rate: 0.5
+# sample :loop_amen, rate: -1.0

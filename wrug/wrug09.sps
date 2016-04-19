@@ -3,10 +3,10 @@
 # point_index: 0
 # --
 
-# WRUG 09
-# -------------------------------------------
-# everything sounds better with reverb!
-with_fx :reverb do
-  play_chord chord(:c4, :major)
+# WRUG 09 -------------------------------------------
+# mozemy dodawać efekty!
+
+with_fx :echo do # wobble
+  play_pattern scale(:c4, :major)
 end
 

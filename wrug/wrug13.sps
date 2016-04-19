@@ -3,14 +3,11 @@
 # point_index: 0
 # --
 
-# WRUG 13
-# -------------------------------------------
-# here are some of the synths of Sonic Pi
-use_synth :piano
-play_chord chord(:e4, :major)
-sleep 1
+# WRUG 13 -----------------------------------
+# W Sonic Pi mamy do wyboru sporo wbudowanych 
+# syntezatorów. Oto kilka z nich: 
 
-[:saw, :piano, :tb303, :prophet].each do |n|
+[:saw, :piano, :tb303, :prophet, :chiplead, :fm].each do |n|
   use_synth n
   play_chord chord(:e4, :major)
   sleep 1

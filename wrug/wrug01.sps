@@ -1,10 +1,8 @@
 # key: wrug01
-# point_line: 0
-# point_index: 0
+# point_line: 1
+# point_index: 1
 # --
-
-# WRUG 01
-# -------------------------------------------
-# play midi note number 60 and wait one beat
+ 
+# WRUG 01 ---------------------
+# zagraj nutę midi o numerze 60
 play 60
-sleep 1

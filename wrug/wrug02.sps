@@ -3,9 +3,6 @@
 # point_index: 0
 # --
 
-# WRUG 02
-# -------------------------------------------
-# that midi code 60, it's the same as :c4
+# WRUG 02 ---------------------------------
+# kod midi równy 60, to to samo co nuta :c4
 play :c4
-sleep 1
-
