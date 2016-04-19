@@ -1,0 +1,95 @@
+BRUDNOPIS
+
+
+
+# key: scom1
+# point_line: 1
+# point_index: 1
+# --
+
+live_loop :melody do
+stop 
+  sync :vortex
+  use_synth :chiplead
+  # sweet child o' mine 01 (https://www.youtube.com/watch?v=Jt_KrWZ5Deg)
+  notes = [:ds4,:cs5,:gs4,:fs4,:fs5, :gs4, :f5, :gs4]	
+  play_pattern_timed notes, [0.25], amp: 0.25
+end
+
+
+https://www.youtube.com/watch?v=Jt_KrWZ5Deg
+
+
+
+# key: scom2
+# point_line: 1
+# point_index: 1
+# --
+
+# sweet child o' mine 2
+notes = [:d4,:d5,:a4,:e4,:g4,:e4,:f4,:e4] 
+play_pattern_timed notes, [0.25]
+
+--------------------------------------
+
+# melodia generowana z losowo wybranych nut
+# z losowymi przerwami pomiedzy dzwiekami
+
+loop do
+  play scale(:c4, :major).choose
+  sleep [0.125, 0.25, 0.5].choose
+end
+
+
+
+------------------------------------
+
+# na nasza melodie mozemy nalozyc efekt
+
+
+
+with_fx :wobble do
+	loop do
+	  play scale(:c4, :major).choose
+	  sleep [0.125, 0.25, 0.5].choose
+	end
+end
+
+
+------------------------------------
+
+
+# W Sonic Pi mamy do wyboru sporo wbudowanych 
+# syntezatorów. Oto kilka z nich: 
+
+[:saw, :piano, :tb303, :prophet, :chiplead, :fm].each do |n|
+  use_synth n
+  play_chord chord(:e4, :major)
+  sleep 1
+end
+
+
+# -------------------------------------------------------
+# możemy stworzyć więcej niż jedną żywą pętlę!
+# ogranicza nas tu tylko moc naszego komputera
+use_bpm 75
+
+live_loop :beats do
+  sample :loop_amen, beat_stretch: 2 
+  # 1. loop_breakbeat!, amp2
+  sleep 2
+end
+
+live_loop :doodle do
+  sync :beats
+  2.times do
+    with_fx :slicer do
+      4.times do
+        play scale(:c4, :minor).choose 
+        # 2. chord!
+        sleep [0.125, 0.25, 0.5].choose 
+        # 3. sleep!
+      end
+    end
+  end
+end

@@ -4,9 +4,10 @@
 # --
 
 # WRUG 09 -------------------------------------------
-# mozemy dodawać efekty!
 
-with_fx :echo do # wobble
-  play_pattern scale(:c4, :major)
+# LIVE LOOP!
+
+live_loop :beats do
+  sample :loop_amen
+  sleep sample_duration(:loop_amen)
 end
-

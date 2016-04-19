@@ -3,9 +3,10 @@
 # point_index: 0
 # --
 
-# WRUG 06 ---------------------------------------------------------
-# to tez gama C-dur (1 uderzenie przerwy pomiedzy kazdym dzwiekiem)
+# WRUG 06 --------------------------------
 
-play_pattern scale(:c4, :major)
+# Efekty/FX!
 
-# play_pattern scale(:c4, :major).reverse
+with_fx :echo do # wobble
+  play_pattern chord(:c4, :major)
+end

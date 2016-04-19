@@ -3,16 +3,22 @@
 # point_index: 0
 # --
 
-# WRUG 04 ---------------------------------------
-# ten sam akord możemy zagrać także w taki sposób
-play :c4
-play :e4
-play :g4
+# WRUG 04 ------------
 
-# albo w taki
-sleep 1
-play_chord [:c4, :e4, :g4], amp: 3
+# Gama C Dur
 
-# albo w taki
-sleep 1
-play_chord chord(:c4, :major), amp: 2
+play :c4 # do 
+sleep 0.5
+play :d4 # re
+sleep 0.5
+play :e4 # mi 
+sleep 0.5
+play :f4 # fa
+sleep 0.5
+play :g4 # sol 
+sleep 0.5
+play :a4 # la 
+sleep 0.5
+play :b4 # si 
+sleep 0.5
+play :c5 # do

@@ -4,7 +4,12 @@
 # --
 
 # WRUG 03 ------------------------
-# zagrajmy akord C-dur w 4 oktawie
-play 60
-play 64
-play 67
+
+# Można jeszce prościej, tak
+
+play_chord [:c4, :e4, :g4], amp: 3
+sleep 1
+
+# albo tak:
+
+play_chord chord(:c4, :major), amp: 3

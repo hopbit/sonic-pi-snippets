@@ -4,5 +4,12 @@
 # --
 
 # WRUG 08 -------------------------------------------
-# możemy podać wiele odstępów
-play_pattern_timed scale(:c4, :major_pentatonic), [0.125, 0.25]
+
+# SAMPLE! 
+
+sample :loop_amen
+
+# podobnie jak przy syntezatorach, sample można modyfikować
+
+# sample :loop_amen, rate: 0.5
+# sample :loop_amen, rate: -1.0

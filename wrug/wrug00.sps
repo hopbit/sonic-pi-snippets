@@ -2,7 +2,7 @@
 # point_line: 0
 # point_index: 15
 # --
-set_volume! 0.25
+set_volume! 0.75
 # Author: Jindrich Mynarz
 # Source: https://gist.github.com/jindrichmynarz/f233f75c719abe6a6c81
 
