@@ -1,6 +1,6 @@
 BRUDNOPIS
 
-
+load_snippets("/path/to/snippets/dir")
 
 # key: scom1
 # point_line: 1
