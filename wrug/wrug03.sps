@@ -5,7 +5,7 @@
 
 # WRUG 03 ------------------------
 
-# Można jeszce prościej, tak
+# Można jeszcze prościej, tak
 
 play_chord [:c4, :e4, :g4], amp: 3
 sleep 1
