@@ -2,6 +2,8 @@
 # point_line: 0
 # point_index: 0
 # --
+
+# coco jumbo?????
 notes = [:a4,:cs5,:gs6,:g4,:c5,:c5,:g6,:e6]
 
 
