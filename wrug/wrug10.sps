@@ -2,7 +2,6 @@
 # point_line: 0
 # point_index: 0
 # --
-
 # WRUG 10 -----------------------------------------------
 # 3 żywe pętle bazujące na prezentacji Sama Aarona z TEDx
 
