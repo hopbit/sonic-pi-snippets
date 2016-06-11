@@ -1,10 +1,8 @@
-# key: wrug19
+# key: ex2
 # point_line: 0
 # point_index: 0
 # --
-
-# WRUG 19
-# -------------------------------------------
+# EXAMPLE 2 ----------------------
 # four chords plus bass and drums
 
 m = [

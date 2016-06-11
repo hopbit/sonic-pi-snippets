@@ -1,11 +1,10 @@
-# key: wrug18
+# key: ex1
 # point_line: 0
 # point_index: 0
 # --
-
-# WRUG 18
-# -------------------------------------------
+# Example 1 -------------------------------------------
 # a trippy drum-computer beat
+
 use_bpm 120
 
 live_loop :boom do

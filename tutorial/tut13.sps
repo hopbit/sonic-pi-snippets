@@ -6,5 +6,6 @@
 # podobnie jak przy syntezatorach, sample można modyfikować
 
 sample :loop_amen, rate: 0.5
+# # ZAGADKA NR. 2
 # sample :loop_amen, rate: -1
 

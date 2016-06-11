@@ -1,6 +1,6 @@
 # key: tut12
-# point_line: 0
-# point_index: 0
+# point_line: 1
+# point_index: 7
 # --
 # TUT 12 -------------------------------------------
 # SAMPLE!

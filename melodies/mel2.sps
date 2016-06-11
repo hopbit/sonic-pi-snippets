@@ -2,25 +2,19 @@
 # point_line: 0
 # point_index: 0
 # --
+# metallica - nothing else matters
+notes = (ring :e5, :r, :g5, :r, :b5, :r, :e6, :r, :b5, :r, :g5, :r) * 2
+# notes += (ring :b6, :r, :b6, :r, :r, :r, :b6, :r, :e6, :r, :b6, :r)
+# notes += (ring :c7, :r, :b6, :r, :c7, :r, :b6, :c7) # TBC
 
-# coco jumbo?????
-notes = [:a4,:cs5,:gs6,:g4,:c5,:c5,:g6,:e6]
 
-
-
-commend do
- notes = [:a4,:d5,:a5,:d5]
-notes += [:a4,:a5,:f5,:e5]
-notes += [:d5, :ds5]
-sleeps = [0.25]* 10
-
+# metallica - nothing else matters (24 beats)
+theme = (ring :e5, :r, :g5, :r, :b5, :r, :e6, :r, :b5, :r, :g5, :r) * 2
+# theme += (ring :b6, :r, :b6, :r, :r, :r, :b6, :r, :e6, :r, :b6, :r)
+# theme += (ring :c7, :r, :b6, :r, :c7, :r, :b6, :c7)
+set_volume! 2
+use_synth :piano
 live_loop :foo do
-  
-  4.times do |n|
-    play notes[n]
-    sleep sleeps[n]
-  end
+  play theme.tick, relese: 1, amp: 0.1
+  sleep 0.25
 end
-
-end
-

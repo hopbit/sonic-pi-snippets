@@ -2,8 +2,8 @@
 # point_line: 0
 # point_index: 0
 # --
-# TUT 03 ------------------------------------------------
-# 3 dzwieki zagrane na raz to akord (w tym wypadku C-dur)
+# TUT 03 ------------------------------------------------------
+# 3 dzwieki zagrane jednoczesnie to akord (w tym wypadku C-dur)
 
 play 60
 play 64

@@ -5,5 +5,5 @@
 # TUT 07 -----------------------------------------------
 # Mozemy korzystać z różnych syntezatorów (instrumentów)
 
-# use_synth # :beep # :tb303 # :chiplead # :piano
+# use_synth :beep # :tb303 # :chiplead # :piano
 play :c4

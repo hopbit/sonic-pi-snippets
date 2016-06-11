@@ -5,6 +5,6 @@
 # TUT 11 ----------------------------------------------
 # W swoich kompozycjach mozemy wykorzystywac Efekty/FX!
 
-with_fx :echo do # :wobble # :ixi_techno # :flanger
-  play_pattern_timed scale(:c4, :major), 0.25
+with_fx :echo do # :wobble # :ixi_techno # :distortion
+  play_pattern_timed scale(:c4, :major), 1
 end

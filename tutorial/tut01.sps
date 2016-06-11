@@ -3,7 +3,6 @@
 # point_index: 0
 # --
 # TUT 01 -------------------------------------------
-# Zagraj nute o numerze 60 i poczekaj jedna sekunde.
-# Numerki mozna zmieniac
+# Zagraj nute o numerze 60. Liczby mozna zmieniac
 
-play 60
+play 60 # 65 # 50 # 34 # 64.2 # 68.75
