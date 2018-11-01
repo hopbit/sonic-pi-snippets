@@ -44,7 +44,7 @@ live_loop :background do
   end
 end
 
-live_loop :loop_amen, sync: :metronome do
+live_loop :beats, sync: :metronome do
   stop
   use_bpm 170
   sample :loop_amen, beat_stretch: 4, amp: 1
