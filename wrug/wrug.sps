@@ -1,8 +1,8 @@
-# key: wrug01
+# key: wrug
 # point_line: 0
 # point_index: 0
 # --
-# WRUG 01 -----------------------------------------------
+# WRUG 2016-04-20 -----------------------------------------------
 # 3 żywe pętle bazujące na prezentacji Sama Aarona z TEDx
 
 set_volume! 1
