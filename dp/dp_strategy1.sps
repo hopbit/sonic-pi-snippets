@@ -8,7 +8,7 @@ set_volume! 1
 live_loop :metronome do
   use_bpm 170
   puts "---> Bar: #{tick} <---"
-  16.times do |b|
+  8.times do |b|
     puts "# Beat: #{b}"
     ##| sample :drum_snare_hard
     sleep 1
@@ -17,8 +17,9 @@ end
 
 # https://www.samplephonics.com/products/free/vocals/casey-lipka-vocals-freebie
 live_loop :vocal, sync: :metronome do
-  stop
+  # stop
   use_bpm 170
+  sleep 0
   sp = 'E:\hopbit\dj\samples\vocals\CaseyLipkaVocals_Mini_SP\80_C#m_OctDownVocal_01_612.wav'
   sample sp, beat_stretch: 64
   sleep 64
@@ -27,7 +28,7 @@ end
 # https://www.youtube.com/watch?v=aPE0sxN6zSc
 background = [[:cs3,4.0,2.0],[:fs2,3.0,2.0],[:a2,4.0,2.0],[:b2,4.0,2.0]]*2
 live_loop :background do
-  stop
+  # stop
   use_bpm 170
   sync :metronome
   use_synth :piano
@@ -43,7 +44,7 @@ end
 notes =  [[:db4,0.5,0.75],[:e4,0.5,0.75],[:db4,0.5,0.5]]*3
 notes += [[:eb,0.5,0.75],[:db4,0.5,0.75],[:b3, 1.0,0.5]]
 live_loop :melody do
-  stop
+  # stop
   sync :metronome
   use_bpm 170
   use_synth :piano
@@ -54,7 +55,7 @@ live_loop :melody do
 end
 
 live_loop :beats, sync: :metronome do
-  stop
+  # stop
   use_bpm 170
   sample :loop_amen, beat_stretch: 4, amp: 0.1
   sleep 4

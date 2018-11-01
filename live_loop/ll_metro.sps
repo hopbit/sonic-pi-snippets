@@ -5,7 +5,7 @@
 live_loop :metronome do
   use_bpm 170
   puts "---> Bar: #{tick} <---"
-  16.times do |b|
+  8.times do |b|
     puts "# Beat: #{b}"
     ##| sample :drum_snare_hard
     sleep 1

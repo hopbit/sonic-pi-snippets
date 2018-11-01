@@ -10,7 +10,7 @@ track = DNBTrack.new
 live_loop :metronome do
   use_bpm track.tempo
   puts "---> Bar: #{tick} <---"
-  16.times do |b|
+  8.times do |b|
     puts "# Beat: #{b}"
     sleep 1
   end
@@ -19,8 +19,9 @@ end
 live_loop :vocal, sync: :metronome do
   ##| stop
   use_bpm track.tempo
-  sample track.vocal, beat_stretch: 64
-  sleep 64
+  sleep track.vocal[2]
+  sample track.vocal[0], beat_stretch: track.vocal[1]
+  sleep track.vocal[3]
 end
 
 live_loop :background do
