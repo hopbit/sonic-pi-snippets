@@ -17,7 +17,7 @@ end
 
 live_loop :sample_loop do
   stop
-  sync :beats
+  sync :metronome
   4.times do
     sample :loop_industrial, beat_stretch: 2, amp: 0.2
     sleep 2
@@ -27,7 +27,7 @@ end
 notes = (scale :gs3, :minor_pentatonic)
 live_loop :background do
   stop
-  sync :beats
+  sync :metronome
   use_synth :beep
   32.times do
     play notes.choose, release: 0.125, amp: 0.3, cutoff: 70
@@ -41,7 +41,7 @@ end
 # notes_sleeps = [0.25] * 16
 live_loop :melody do
   ##| stop
-  sync :beats
+  sync :metronome
   use_synth :piano # :chiplead
   1.times do | n |
     play notes[n], amp: 0.35

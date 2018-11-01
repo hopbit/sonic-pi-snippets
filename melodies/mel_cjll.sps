@@ -4,7 +4,7 @@
 # --
 live_loop :foo1 do
   ##| stop
-  sync :beats
+  sync :metronome
   use_synth :chiplead
   with_fx :wobble, phase: 0.125 do
     notes.size.times do |n|

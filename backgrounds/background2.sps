@@ -3,7 +3,7 @@
 # point_index: 0
 # --
 live_loop :background0 do
-  ##| sync :beats
+  ##| sync :metronome
   with_fx :flanger, phase: 8 do
     with_fx :echo, phase: 0.5 do
       8.times do

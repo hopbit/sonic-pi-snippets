@@ -5,7 +5,7 @@
 background = (scale :gs3, :minor_pentatonic)
 live_loop :background do
   # stop
-  # sync :beats
+  # sync :metronome
   use_synth :beep
   32.times do
     play background.choose, release: 0.125, amp: 0.3, cutoff: 70

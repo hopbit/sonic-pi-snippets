@@ -81,7 +81,7 @@ live_loop :beats do
 end
 
 live_loop :doodle do
-  sync :beats
+  sync :metronome
   2.times do
     with_fx :slicer do
       4.times do
