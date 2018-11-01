@@ -1,4 +1,4 @@
-# key: mel scom ll
+# key: mel scomll
 # point_line: 0
 # point_index: 0
 # --
