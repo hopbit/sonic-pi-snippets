@@ -3,9 +3,11 @@
 # point_index: 0
 # --
 # TUT 13 -------------------------------------------
-# podobnie jak przy syntezatorach, sample można modyfikować
+# Sample mozemy modyfikowac, tak jak syntezatory
 
+# ZAGADKA NR. 3
 sample :loop_amen, rate: 0.5
-# # ZAGADKA NR. 2
-# sample :loop_amen, rate: -1
 
+# sample :loop_amen, rate: 2.0
+
+# sample :loop_amen, rate: -1

@@ -3,8 +3,9 @@
 # point_index: 0
 # --
 # TUT 04 ------------------------------------------
-# ten sam akord mozemy tez zagrac za pomoca 3 nut
+# Ten sam akord mozemy tez zagrac za pomoca 3 nut
 
-play :c4
-play :e4
-play :g4
+# Akord C-dur
+play :c4 # 60.0
+play :e4 # 64.0
+play :g4 # 67.0

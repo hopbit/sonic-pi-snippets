@@ -3,7 +3,7 @@
 # point_index: 0
 # --
 # TUT 03 ------------------------------------------------------
-# 3 dzwieki zagrane jednoczesnie to akord (w tym wypadku C-dur)
+# ZAGADKA NR. 1
 
 play 60
 play 64

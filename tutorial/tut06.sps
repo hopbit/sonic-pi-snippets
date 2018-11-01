@@ -3,6 +3,7 @@
 # point_index: 0
 # --
 # TUT 06 ------------------------------------------
-# ...albo w taki :)
+# Mozna tez zrobic to przekazujac jako  parametr
+# wynik funkcji chord.
 
 play_chord chord(:c4, :major), amp: 3

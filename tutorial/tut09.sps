@@ -3,8 +3,12 @@
 # point_index: 0
 # --
 # TUT 09 ------------------------------------------
-# Tworzenie melodii. Gama C Dur.
+# MELODIE.
+# Zeby zagrac melodie kazdym dzwieku nalezy
+# odczekac pewna ilosc czasu
+# (np. az dany dzwiek przestanie brzmiec).
 
+# Gama C dur
 play :c4 # do
 sleep 0.5
 play :d4 # re
