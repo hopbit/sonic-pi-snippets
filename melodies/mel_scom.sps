@@ -1,5 +1,5 @@
 # key: mel scom
-# point_line: 3
+# point_line: 4
 # point_index: 0
 # --
 # sweet child o' mine (16 beats)
