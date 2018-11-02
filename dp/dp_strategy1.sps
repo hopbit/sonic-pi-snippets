@@ -27,7 +27,7 @@ live_loop :vocal do
            start: 0,
            finish: 0.0625,
            amp: 1.0
-    sleep 12
+    sleep 16
   end
 end
 
