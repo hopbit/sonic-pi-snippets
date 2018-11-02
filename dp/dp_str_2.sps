@@ -1,12 +1,11 @@
-# key: dp strategy3
+# key: dp str 2
 # point_line: 0
 # point_index: 0
 # --
 # Let's start with simple house live loop
 set_volume! 1
 
-##| track = DNBTrack.new
-track = DanceTrack.new
+track = Track1.new
 
 live_loop :metronome do
   use_bpm track.tempo

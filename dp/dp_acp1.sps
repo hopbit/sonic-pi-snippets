@@ -2,7 +2,7 @@
 # point_line: 0
 # point_index: 0
 # --
-class AcappellaTrack < Track
+class Track3 < Track
 
   attr_reader :tempo # bpm
   attr_reader :vocal

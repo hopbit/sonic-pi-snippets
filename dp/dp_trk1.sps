@@ -1,8 +1,8 @@
-# key: dp dnb1
+# key: dp trk1
 # point_line: 0
 # point_index: 0
 # --
-class DNBTrack < Track
+class Track1 < Track
 
   attr_reader :tempo # bpm
   attr_reader :vocal
