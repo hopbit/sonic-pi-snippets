@@ -10,8 +10,7 @@ class DanceTrack < Track
 
     @tempo = 125
 
-    ##| @vocal = ['E:\hopbit\dj\samples\vocals\MaleHouseVocals_Freebie_SP\116_D#_Harmony_A_01_SP.wav', 16, 0, 32]
-    @vocal = ['E:\hopbit\dj\samples\vocals\MaleHouseVocals_Freebie_SP\116_D#_Harmony_B_01_SP.wav', 16, 0, 32]
+    @vocal = ['E:\hopbit\dj\samples\vocals\MaleHouseVocals_Freebie_SP\116_D#_Harmony_B_01_SP.wav', 0.0, 1.0, 0, 12]
 
     @bg = [[[:cs4,:e4,:db4],0.5,1.0]]*4
 

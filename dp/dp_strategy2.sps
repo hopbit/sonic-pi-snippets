@@ -10,18 +10,22 @@ track = DNBTrack.new
 live_loop :metronome do
   use_bpm track.tempo
   puts "---> Bar: #{tick} <---"
-  8.times do |b|
+  32.times do |b|
     puts "# Beat: #{b}"
     sleep 1
   end
+
 end
 
-live_loop :vocal, sync: :metronome do
-  ##| stop
+live_loop :vocal do
+  # stop
   use_bpm track.tempo
-  sleep track.vocal[2]
-  sample track.vocal[0], beat_stretch: track.vocal[1]
-  sleep track.vocal[3]
+  sync :metronome
+  4.times do
+    sleep track.vocal[3]
+    sample track.vocal[0], start: track.vocal[1], finish: track.vocal[2]
+    sleep track.vocal[4]
+  end
 end
 
 live_loop :background do
@@ -29,6 +33,7 @@ live_loop :background do
   use_bpm track.tempo
   sync :metronome
   use_synth :piano
+
   track.bg.size.times do |n|
     play track.bg[n][0], sustain: track.bg[n][1]
     sleep track.bg[n][2]*2
@@ -41,15 +46,20 @@ live_loop :melody do
   use_bpm track.tempo
   use_synth :piano
   notes = track.melody
-  notes.size.times do |n|
-    play notes[n][0], decay: notes[n][1]
-    sleep notes[n][2]*2
+  2.times do
+    notes.size.times do |n|
+      play notes[n][0], decay: notes[n][1]
+      sleep notes[n][2]*2
+    end
   end
 end
 
-live_loop :beats, sync: :metronome do
+live_loop :beats do
   ##| stop
+  sync :metronome
   use_bpm track.tempo
-  sample track.beat, beat_stretch: 4, amp: 0.5
-  sleep 4
+  8.times do
+    sample track.beat, beat_stretch: 4, amp: 0.5
+    sleep 4
+  end
 end
