@@ -2,6 +2,7 @@
 # point_line: 0
 # point_index: 0
 # --
+# DP STR 1
 # Let's start with simple house live loop
 set_volume! 1
 
