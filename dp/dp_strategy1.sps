@@ -22,10 +22,11 @@ live_loop :vocal do
   sync :metronome
   4.times do
     sleep 0
-    vocal_smp = 'E:\hopbit\dj\samples\vocals\CaseyLipkaVocals_Mini_SP\80_C#m_OctDownVocal_01_612.wav'
-    sample vocal_smp,
+    sample_vocal = 'E:\hopbit\dj\samples\vocals\CaseyLipkaVocals_Mini_SP\80_C#m_OctDownVocal_01_612.wav'
+    sample sample_vocal,
            start: 0,
-           finish: 0.0625
+           finish: 0.0625,
+           amp: 1.0
     sleep 12
   end
 end
@@ -33,7 +34,7 @@ end
 # https://www.youtube.com/watch?v=aPE0sxN6zSc
 background = [[:cs3, 4.0, 2.0], [:fs2, 3.0, 2.0], [:a2, 4.0, 2.0], [:b2, 4.0, 2.0]] * 2
 live_loop :background do
-  # stop
+  ##| stop
   use_bpm 170
   sync :metronome
   use_synth :piano
@@ -49,7 +50,7 @@ end
 melody = [[:db4, 0.5, 0.75], [:e4, 0.5, 0.75], [:db4, 0.5, 0.5]] * 3
 melody += [[:eb, 0.5, 0.75], [:db4, 0.5, 0.75], [:b3, 1.0, 0.5]]
 live_loop :melody do
-  # stop
+  ##| stop
   sync :metronome
   use_bpm 170
   use_synth :piano

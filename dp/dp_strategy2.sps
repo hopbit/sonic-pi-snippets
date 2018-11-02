@@ -21,12 +21,12 @@ live_loop :vocal do
   # stop
   use_bpm track.tempo
   sync :metronome
-  4.times do
-    sleep track.vocal[3]
-    sample track.vocal[0],
-           start: track.vocal[1],
-           finish: track.vocal[2]
-    sleep track.vocal[4]
+  track.vocal['times'].times do
+    sleep track.vocal['sleep_before']
+    sample track.vocal['sample'],
+           start: track.vocal['sample_start'],
+           finish: track.vocal['sample_finish']
+    sleep track.vocal['sleep_after']
   end
 end
 

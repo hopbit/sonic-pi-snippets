@@ -12,7 +12,14 @@ class DNBTrack < Track
 
   def initialize
     @tempo = 170
-    @vocal = ['E:\hopbit\dj\samples\vocals\CaseyLipkaVocals_Mini_SP\80_C#m_OctDownVocal_01_612.wav', 0, 0.0625, 0, 8]
+    @vocal = {
+        'sample' => 'E:\hopbit\dj\samples\vocals\CaseyLipkaVocals_Mini_SP\80_C#m_OctDownVocal_01_612.wav',
+        'times' => 4,
+        'sample_start' => 0,
+        'sample_finish' => 0.0625,
+        'sleep_before' => 0,
+        'sleep_after' => 8
+    }
     @bg = [[:cs3, 4.0, 2.0], [:fs2, 3.0, 2.0], [:a2, 4.0, 2.0], [:b2, 4.0, 2.0]] * 2
     @melody = [[:db4, 0.5, 0.75], [:e4, 0.5, 0.75], [:db4, 0.5, 0.5]] * 3
     @melody += [[:eb4, 0.5, 0.75], [:db4, 0.5, 0.75], [:b3, 1.0, 0.5]]
@@ -23,5 +30,4 @@ class DNBTrack < Track
         'sleep' => 4
     }
   end
-
 end
