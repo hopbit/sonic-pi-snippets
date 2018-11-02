@@ -59,7 +59,7 @@ live_loop :beats do
   sync :metronome
   use_bpm track.tempo
   8.times do
-    sample track.beat, beat_stretch: 4, amp: 0.5
+    sample track.beat, beat_stretch: 4, amp: 0.2
     sleep 4
   end
 end
