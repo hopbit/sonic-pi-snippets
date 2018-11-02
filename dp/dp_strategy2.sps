@@ -12,9 +12,9 @@ live_loop :metronome do
   puts "---> Bar: #{tick} <---"
   32.times do |b|
     puts "# Beat: #{b}"
+    ##| sample :drum_snare_hard
     sleep 1
   end
-
 end
 
 live_loop :vocal do
@@ -35,7 +35,6 @@ live_loop :background do
   use_bpm track.tempo
   sync :metronome
   use_synth :piano
-
   track.bg.size.times do |n|
     play track.bg[n][0], sustain: track.bg[n][1]
     sleep track.bg[n][2]*2
@@ -47,11 +46,11 @@ live_loop :melody do
   sync :metronome
   use_bpm track.tempo
   use_synth :piano
-  notes = track.melody
+  melody = track.melody
   2.times do
-    notes.size.times do |n|
-      play notes[n][0], decay: notes[n][1]
-      sleep notes[n][2]*2
+    melody.size.times do |n|
+      play melody[n][0], decay: melody[n][1]
+      sleep melody[n][2]*2
     end
   end
 end
@@ -63,7 +62,7 @@ live_loop :beats do
   track.beat['times'].times do
     sample track.beat['sample'],
            beat_stretch: track.beat['stretch'],
-           amp: 0.2
+           amp: 0.1
     sleep track.beat['sleep']
   end
 end
