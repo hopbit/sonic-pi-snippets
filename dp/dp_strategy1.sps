@@ -65,7 +65,7 @@ live_loop :beats do
   ##| stop
   sync :metronome
   use_bpm 170
-  2.times do
+  8.times do
     sample :loop_amen,
            beat_stretch: 4,
            amp: 0.1
