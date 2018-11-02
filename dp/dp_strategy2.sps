@@ -37,7 +37,7 @@ live_loop :background do
   use_synth :piano
   track.bg.size.times do |n|
     play track.bg[n][0], sustain: track.bg[n][1]
-    sleep track.bg[n][2]*2
+    sleep track.bg[n][2] * 2
   end
 end
 
@@ -47,11 +47,9 @@ live_loop :melody do
   use_bpm track.tempo
   use_synth :piano
   melody = track.melody
-  2.times do
-    melody.size.times do |n|
-      play melody[n][0], decay: melody[n][1]
-      sleep melody[n][2]*2
-    end
+  melody.size.times do |n|
+    play melody[n][0], decay: melody[n][1]
+    sleep melody[n][2] * 2
   end
 end
 

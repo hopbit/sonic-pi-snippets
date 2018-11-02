@@ -49,17 +49,17 @@ end
 # 2 bars, 8 beats
 melody = [[:db4, 0.5, 0.75], [:e4, 0.5, 0.75], [:db4, 0.5, 0.5]] * 3
 melody += [[:eb, 0.5, 0.75], [:db4, 0.5, 0.75], [:b3, 1.0, 0.5]]
+melody *= 2
 live_loop :melody do
   ##| stop
   sync :metronome
   use_bpm 170
   use_synth :piano
-  2.times do
-    melody.size.times do |n|
-      play melody[n][0], decay: melody[n][1]
-      sleep melody[n][2] * 2
-    end
-    end
+  melody.size.times do |n|
+    play melody[n][0], decay: melody[n][1]
+    sleep melody[n][2] * 2
+  end
+
 end
 
 live_loop :beats do
