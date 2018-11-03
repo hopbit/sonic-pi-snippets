@@ -4,7 +4,7 @@
 # --
 class TrackA < Track
   def initialize
-    @tempo = TempoDNB.new
+    @tempo = TempoDnb.new
     @vocal = VocalDNB.new
     @bg = BackgroundDNB.new
     @melody = MelodyDNB.new

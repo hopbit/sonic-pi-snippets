@@ -2,10 +2,10 @@
 # point_line: 0
 # point_index: 0
 # --
-class TrackG < Track
+class TrackF < Track
   def initialize
     @tempo = TempoHouse.new
-    @vocal = VocalHouse.new
+    @vocal = VocalDance.new
     @bg = BackgroundDance.new
     @melody = MelodyDNB.new
     @beat = BeatHouse.new
