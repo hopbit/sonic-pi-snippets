@@ -8,7 +8,7 @@ class BackgroundACapella < BackgroundStrategy
   end
 end
 
-class BacgroundDNB < BackgroundStrategy
+class BackgroundDNB < BackgroundStrategy
   def initialize
     @bg = [[:cs3, 4.0, 2.0], [:fs2, 3.0, 2.0], [:a2, 4.0, 2.0], [:b2, 4.0, 2.0]] * 2
   end
