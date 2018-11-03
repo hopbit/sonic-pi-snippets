@@ -8,7 +8,7 @@ class Track
   attr_reader :vocal
   attr_reader :bg # background, accompaniament
   attr_reader :melody
-  attr_reader :beats
+  attr_reader :beat
 
   def initialize
     # some setup here

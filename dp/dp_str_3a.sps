@@ -56,7 +56,7 @@ live_loop :melody do
   end
 end
 
-live_loop :beats do
+live_loop :beat do
   ##| stop
   sync :metronome
   use_bpm track.tempo
