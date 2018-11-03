@@ -3,13 +3,6 @@
 # point_index: 0
 # --
 class Track1 < Track
-
-  attr_reader :tempo # bpm
-  attr_reader :vocal
-  attr_reader :bg # background, accompaniament
-  attr_reader :melody
-  attr_reader :beat
-
   def initialize
     @tempo = 170
     @vocal = {

@@ -6,12 +6,13 @@ class Track
 
   attr_reader :tempo # bpm
   attr_reader :vocal
-  attr_reader :background # accompaniament
+  attr_reader :bg # background, accompaniament
   attr_reader :melody
   attr_reader :beats
 
   def initialize
     # some setup here
+    raise "Use subclasses"
   end
 
 end
