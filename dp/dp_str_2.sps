@@ -3,6 +3,7 @@
 # point_index: 0
 # --
 # DP STR 2
+# Add dance like track
 set_volume! 1
 
 ##| track = Track1.new

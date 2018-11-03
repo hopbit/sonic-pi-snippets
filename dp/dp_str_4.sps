@@ -1,9 +1,9 @@
-# key: dp str 3
+# key: dp str 4
 # point_line: 0
 # point_index: 0
 # --
-# DP STR 3
-# Add a capella track. First problem.
+# DP STR 4
+# A capella track with fixed NPE's
 set_volume! 1
 
 ##| track = Track1.new
@@ -38,9 +38,11 @@ live_loop :background do
   use_bpm track.tempo
   sync :metronome
   use_synth :piano
-  track.bg.size.times do |n|
-    play track.bg[n][0], sustain: track.bg[n][1]
-    sleep track.bg[n][2] * 2
+  if track.bg
+    track.bg.size.times do |n|
+      play track.bg[n][0], sustain: track.bg[n][1]
+      sleep track.bg[n][2] * 2
+    end
   end
 end
 
@@ -50,9 +52,11 @@ live_loop :melody do
   use_bpm track.tempo
   use_synth :piano
   melody = track.melody
-  melody.size.times do |n|
-    play melody[n][0], decay: melody[n][1]
-    sleep melody[n][2] * 2
+  if melody
+    melody.size.times do |n|
+      play melody[n][0], decay: melody[n][1]
+      sleep melody[n][2] * 2
+    end
   end
 end
 
@@ -60,10 +64,12 @@ live_loop :beats do
   ##| stop
   sync :metronome
   use_bpm track.tempo
-  track.beat['times'].times do
-    sample track.beat['sample'],
-           beat_stretch: track.beat['stretch'],
-           amp: 0.1
-    sleep track.beat['sleep']
+  if track.beat
+    track.beat['times'].times do
+      sample track.beat['sample'],
+             beat_stretch: track.beat['stretch'],
+             amp: 0.1
+      sleep track.beat['sleep']
+    end
   end
 end
