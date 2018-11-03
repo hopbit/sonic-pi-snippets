@@ -3,14 +3,14 @@
 # point_index: 0
 # --
 class BeatACapella < BeatStrategy
-  def initialize
-    @beat = nil
+  def get
+    nil
   end
 end
 
 class BeatDNB < BeatStrategy
-  def initialize
-    @beat = {
+  def get
+    {
         'sample' => :loop_amen,
         'times' => 8,
         'stretch' => 4,
@@ -20,8 +20,8 @@ class BeatDNB < BeatStrategy
 end
 
 class BeatDance < BeatStrategy
-  def intitialize
-    @beat = {
+  def get
+    {
         'sample' => :loop_industrial,
         'times' => 16,
         'stretch' => 2,

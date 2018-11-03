@@ -2,7 +2,7 @@
 # point_line: 0
 # point_index: 0
 # --
-class TempoDNB < BeatStrategy
+class TempoDNB < TempoStrategy
   def initialize
     @tempo = 170
   end

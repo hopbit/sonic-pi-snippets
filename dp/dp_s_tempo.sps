@@ -3,19 +3,19 @@
 # point_index: 0
 # --
 class TempoACapella < TempoStrategy
-  def initialize
-    @tempo = 80
+  def get
+    80
   end
 end
 
-class TempoDNB < BeatStrategy
-  def initialize
-    @tempo = 170
+class TempoDnb < TempoStrategy
+  def get
+    170
   end
 end
 
 class TempoDance < TempoStrategy
-  def initialize
-    @tempo = 125
+  def get
+    125
   end
 end

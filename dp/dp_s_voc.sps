@@ -3,8 +3,8 @@
 # point_index: 0
 # --
 class VocalACapella < VocalStrategy
-  def initialize
-    @vocal = {
+  def get
+    {
         'sample' => 'E:\hopbit\dj\samples\vocals\JoshuaDavidVocals_Mini_SP\80_F_AhhHarmonyVocal_01_621.wav',
         'times' => 4,
         'sample_start' => 0.0,
@@ -16,8 +16,8 @@ class VocalACapella < VocalStrategy
 end
 
 class VocalDNB < VocalStrategy
-  def initialize
-    @vocal = {
+  def get
+    {
         'sample' => 'E:\hopbit\dj\samples\vocals\CaseyLipkaVocals_Mini_SP\80_C#m_OctDownVocal_01_612.wav',
         'times' => 4,
         'sample_start' => 0,
@@ -29,8 +29,8 @@ class VocalDNB < VocalStrategy
 end
 
 class VocalDance < VocalStrategy
-  def initialize
-    @vocal = {
+  def get
+    {
         'sample' => 'E:\hopbit\dj\samples\vocals\MaleHouseVocals_Freebie_SP\116_D#_Harmony_B_01_SP.wav',
         'times' => 4,
         'sample_start' => 0.75,
