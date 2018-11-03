@@ -62,7 +62,7 @@ live_loop :beats do
   track.beat['times'].times do
     sample track.beat['sample'],
            beat_stretch: track.beat['stretch'],
-           amp: 0.1
+           amp: 0.5
     sleep track.beat['sleep']
   end
 end
