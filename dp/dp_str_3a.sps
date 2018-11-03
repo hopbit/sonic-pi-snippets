@@ -1,15 +1,14 @@
-# key: dp str 4
+# key: dp str 3a
 # point_line: 0
 # point_index: 0
 # --
-# DP STR 4
-# Track4 - extends Track 1 & mix in some behaviour from Track 2
+# DP STR 3A
+# Add a capella track. First problem.
 set_volume! 1
 
 ##| track = Track1.new
 ##| track = Track2.new
-##| track = Track3.new
-track = Track4.new
+track = Track3.new
 
 live_loop :metronome do
   use_bpm track.tempo
@@ -39,11 +38,9 @@ live_loop :background do
   use_bpm track.tempo
   sync :metronome
   use_synth :piano
-  if track.bg
-    track.bg.size.times do |n|
-      play track.bg[n][0], sustain: track.bg[n][1]
-      sleep track.bg[n][2] * 2
-    end
+  track.bg.size.times do |n|
+    play track.bg[n][0], sustain: track.bg[n][1]
+    sleep track.bg[n][2] * 2
   end
 end
 
@@ -53,11 +50,9 @@ live_loop :melody do
   use_bpm track.tempo
   use_synth :piano
   melody = track.melody
-  if melody
-    melody.size.times do |n|
-      play melody[n][0], decay: melody[n][1]
-      sleep melody[n][2] * 2
-    end
+  melody.size.times do |n|
+    play melody[n][0], decay: melody[n][1]
+    sleep melody[n][2] * 2
   end
 end
 
@@ -65,12 +60,10 @@ live_loop :beats do
   ##| stop
   sync :metronome
   use_bpm track.tempo
-  if track.beat
-    track.beat['times'].times do
-      sample track.beat['sample'],
-             beat_stretch: track.beat['stretch'],
-             amp: 0.5
-      sleep track.beat['sleep']
-    end
+  track.beat['times'].times do
+    sample track.beat['sample'],
+           beat_stretch: track.beat['stretch'],
+           amp: 0.5
+    sleep track.beat['sleep']
   end
 end
