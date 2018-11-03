@@ -16,6 +16,6 @@ end
 
 class TempoDance < TempoStrategy
   def get
-    125
+    132
   end
 end

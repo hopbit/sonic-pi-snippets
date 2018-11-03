@@ -2,8 +2,7 @@
 # point_line: 0
 # point_index: 0
 # --
-# DP STR A
-# TrackA - DNB Style
+# DP STR A, B, C, D, E, F
 set_volume! 1
 
 track = TrackA.new
@@ -19,7 +18,7 @@ live_loop :metronome do
 end
 
 live_loop :vocal do
-  # stop
+  ##| stop
   use_bpm track.tempo.get
   sync :metronome
   track.vocal.get['times'].times do
@@ -61,7 +60,7 @@ live_loop :melody do
 end
 
 live_loop :beat do
-  ##| stopn
+  ##| stop
   sync :metronome
   use_bpm track.tempo.get
   if track.beat.get
