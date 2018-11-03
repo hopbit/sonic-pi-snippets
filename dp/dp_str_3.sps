@@ -6,7 +6,8 @@
 set_volume! 1
 
 ##| track = Track1.new
-track = Track2.new
+##| track = Track2.new
+track = Track3.new
 
 live_loop :metronome do
   use_bpm track.tempo
