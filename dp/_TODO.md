@@ -1,5 +1,8 @@
-kiss slajd do poprawy i przemyślenia
+1.kiss slajd do poprawy i przemyślenia
+
 ruby oop do przemyślkenia, nie wspominać o efekcie ubocznym
+
+----
 
 może zrezygnować z intro do Sonic Pi
 
@@ -25,7 +28,7 @@ brakuje jakiegoś fajnego tła dla wzorca fabryka
 dodać slajd o tym ile jest wzorców w sumie klasycznych, 
 i że jesczce są wzorce JEE, a do tego jeszcze wzorce 
 w programowaniu funkcyjnym, 
-patterns.... everywhere patterns 
+patterns.... everywhere patterns meme
 
 strategia - brakuje info o tym gdzie jest wykorzystywana
 
