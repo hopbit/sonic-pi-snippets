@@ -2,7 +2,7 @@
 # point_line: 0
 # point_index: 0
 # --
-# DP STR A, B, C, D, E, F
+# DP STR A, B, C, D, E, F, ...
 set_volume! 1
 
 track = TrackA.new(ext_samples_path)

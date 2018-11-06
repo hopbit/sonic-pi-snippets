@@ -2,6 +2,7 @@
 # point_line: 0
 # point_index: 0
 # --
+# Interface
 class Track
 
   attr_reader :beat
