@@ -1,36 +1,15 @@
-1.kiss slajd do poprawy i przemyślenia
+może zrezygnować z intro do Sonic Pi?
 
-ruby oop do przemyślkenia, nie wspominać o efekcie ubocznym
+Za dużo następujących słów/gestów: 
+* natomiast
+* powiedzmy 
+* westchnięcia
+* tuf tuf tuf tuf 
+* zapominam wysłać utworu do spi 'compilation error"
 
-----
+Wishlist: 
 
-może zrezygnować z intro do Sonic Pi
-
-za dużo natomiast
-
-strategia: który wzorzec typ? 
-
-nie robić tuf tuf tufu tuf 
-
-wyczyścić buffory przed prezentacją
-
-start z dp str 0
-
-
-fix dp trk 2 -> bpm
-
-zapominam wysłać utworu do spi 'compilation error"
-
-no background, no beat, itd.
-
-brakuje jakiegoś fajnego tła dla wzorca fabryka
-
-dodać slajd o tym ile jest wzorców w sumie klasycznych, 
-i że jesczce są wzorce JEE, a do tego jeszcze wzorce 
-w programowaniu funkcyjnym, 
-patterns.... everywhere patterns meme
-
-strategia - brakuje info o tym gdzie jest wykorzystywana
+* no background, no beat, itd.
 
 poprawić głośność backgroundu/beats w trackach
 

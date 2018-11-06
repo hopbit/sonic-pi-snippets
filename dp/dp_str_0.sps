@@ -69,7 +69,7 @@ live_loop :beat do
   8.times do
     sample :loop_amen,
            beat_stretch: 4,
-           amp: 0.5
+           amp: 0.7
     sleep 4
   end
 end
