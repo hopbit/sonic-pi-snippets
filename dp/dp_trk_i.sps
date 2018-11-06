@@ -10,7 +10,7 @@ class Track
   attr_reader :tempo # bpm
   attr_reader :vocal
 
-  def initialize
+  def initialize(samples_path)
     # some setup here
     raise "Use subclasses"
   end

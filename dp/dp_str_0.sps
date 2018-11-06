@@ -23,7 +23,7 @@ live_loop :vocal do
   sync :metronome
   4.times do
     sleep 0
-    sample_vocal = 'E:\hopbit\dj\samples\vocals\CaseyLipkaVocals_Mini_SP\80_C#m_OctDownVocal_01_612.wav'
+    sample_vocal = "#{ext_samples_path}/vocals/CaseyLipkaVocals_Mini_SP/80_C#m_OctDownVocal_01_612.wav"
     sample sample_vocal,
            start: 0,
            finish: 0.0625,

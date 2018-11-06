@@ -6,10 +6,10 @@
 # Track4 - extends Track 1 & mix in some behaviour from Track 2
 set_volume! 1
 
-##| track = Track1.new
-##| track = Track2.new
-##| track = Track3.new
-track = Track4.new
+##| track = Track1.new(ext_samples_path)
+##| track = Track2.new(ext_samples_path)
+##| track = Track3.new(ext_samples_path)
+track = Track4.new(ext_samples_path)
 
 live_loop :metronome do
   use_bpm track.tempo

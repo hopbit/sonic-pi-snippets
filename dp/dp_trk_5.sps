@@ -3,10 +3,10 @@
 # point_index: 0
 # --
 class Track5 < Track
-  def initialize
+  def initialize(samples_path)
     @tempo = 80
     @vocal = {
-        'sample' => 'E:\hopbit\dj\samples\vocals\JoshuaDavidVocals_Mini_SP\80_F_AhhHarmonyVocal_01_621.wav',
+        'sample' => "#{samples_path}/vocals/JoshuaDavidVocals_Mini_SP/80_F_AhhHarmonyVocal_01_621.wav",
         'times' => 4,
         'sample_start' => 0.0,
         'sample_finish' => 1.0,

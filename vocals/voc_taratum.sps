@@ -6,7 +6,7 @@
 live_loop :vocal, sync: :metronome do
   ##| stop
   use_bpm 170
-  sp = 'E:\hopbit\dj\samples\vocals\CaseyLipkaVocals_Mini_SP\80_C#m_OctDownVocal_01_612.wav'
+  sp = "#{ext_samples_path}/vocals/CaseyLipkaVocals_Mini_SP/80_C#m_OctDownVocal_01_612.wav"
   sample sp, beat_stretch: 64
   ##| sleep sample_duration sp
   sleep 64

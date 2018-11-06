@@ -5,7 +5,7 @@
 # DP STR A, B, C, D, E, F
 set_volume! 1
 
-track = TrackA.new
+track = TrackA.new(ext_samples_path)
 
 live_loop :metronome do
   use_bpm track.tempo.get

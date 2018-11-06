@@ -6,11 +6,11 @@
 # Track5 - Mixing behaviour from all tracks (1,2,3)
 set_volume! 1
 
-##| track = Track1.new
-##| track = Track2.new
-##| track = Track3.new
-##| track = Track4.new
-track = Track5.new
+##| track = Track1.new(ext_samples_path)
+##| track = Track2.new(ext_samples_path)
+##| track = Track3.new(ext_samples_path)
+##| track = Track4.new(ext_samples_path)
+track = Track5.new(ext_samples_path)
 
 live_loop :metronome do
   use_bpm track.tempo

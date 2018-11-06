@@ -3,7 +3,7 @@
 # point_index: 0
 # --
 class Track4 < Track1
-  def initialize
+  def initialize(samples_path)
     super()
     @tempo = 132
     @beat = {

@@ -6,7 +6,7 @@
 # Convert it to be 'more' object oriented
 set_volume! 1
 
-track = Track1.new
+track = Track1.new(ext_samples_path)
 
 live_loop :metronome do
   use_bpm track.tempo
