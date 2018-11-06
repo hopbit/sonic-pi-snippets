@@ -1,4 +1,6 @@
-może zrezygnować z intro do Sonic Pi?
+Do poprawy: 
+* może zrezygnować z intro do Sonic Pi?
+* pierwsze "czytanie" zajęło ok. 2h... o_O
 
 Za dużo następujących słów/gestów: 
 * natomiast
@@ -10,14 +12,4 @@ Za dużo następujących słów/gestów:
 Wishlist: 
 
 * no background, no beat, itd.
-
-poprawić głośność backgroundu/beats w trackach
-
-
-pierwsze "czytanie" zajęło ok. 2h... o_O
-
-dorobić slajdy zamiast rysunków na tablicy?
-
-snippety dp_str_acp, dnb & dnc do usunięcia?
-
-polskie znaki?
+* polskie znaki w snippetach?
