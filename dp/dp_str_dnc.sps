@@ -4,7 +4,7 @@
 # --
 class TempoDance < TempoStrategy
   def initialize
-    @tempo = 125
+    @tempo = 132
   end
 end
 

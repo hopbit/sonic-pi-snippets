@@ -4,7 +4,7 @@
 # --
 class Track2 < Track
   def initialize
-    @tempo = 125
+    @tempo = 132
     @vocal = {
         'sample' => 'E:\hopbit\dj\samples\vocals\MaleHouseVocals_Freebie_SP\116_D#_Harmony_B_01_SP.wav',
         'times' => 4,

@@ -5,7 +5,7 @@
 class Track4 < Track1
   def initialize
     super()
-    @tempo = 125
+    @tempo = 132
     @beat = {
         'sample' => :loop_industrial,
         'times' => 16,
