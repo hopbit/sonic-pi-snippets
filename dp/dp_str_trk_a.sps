@@ -3,11 +3,11 @@
 # point_index: 0
 # --
 class TrackA < Track
-  def initialize(sample_path)
-    @tempo = TempoDnb.new(sample_path)
-    @vocal = VocalDNB.new(sample_path)
-    @bg = BackgroundDNB.new(sample_path)
-    @melody = MelodyDNB.new(sample_path)
-    @beat = BeatDNB.new(sample_path)
+  def initialize(samples_path)
+    @tempo = TempoDnb.new(samples_path)
+    @vocal = VocalDNB.new(samples_path)
+    @bg = BackgroundDNB.new(samples_path)
+    @melody = MelodyDNB.new(samples_path)
+    @beat = BeatDNB.new(samples_path)
   end
 end

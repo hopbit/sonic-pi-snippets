@@ -13,6 +13,9 @@ class BeatACapella < BeatStrategy
 end
 
 class BeatDNB < BeatStrategy
+  def initialize(sample_path)
+    @sample_path = sample_path
+  end
   def get
     {
         'sample' => :loop_amen,
@@ -24,6 +27,9 @@ class BeatDNB < BeatStrategy
 end
 
 class BeatDance < BeatStrategy
+  def initialize(sample_path)
+    @sample_path = sample_path
+  end
   def get
     {
         'sample' => :loop_industrial,
