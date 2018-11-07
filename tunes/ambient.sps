@@ -15,7 +15,8 @@
 #|----------------------------------------------|
 #|    SET UP: https://tinyurl.com/pwdp-setup    |
 #|----------------------------------------------|
-
+#|    HASHTAGs: #ncspi #netcompany              |
+#|----------------------------------------------|
 
 live_loop :note1 do
   use_synth :hollow
