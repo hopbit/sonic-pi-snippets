@@ -12,6 +12,11 @@
 # with each other. This can play for quite awhile without
 # repeating itself :)
 
+#|----------------------------------------------|
+#|    SET UP: https://tinyurl.com/pwdp-setup    |
+#|----------------------------------------------|
+
+
 live_loop :note1 do
   use_synth :hollow
   with_fx :reverb, mix: 0.7 do
