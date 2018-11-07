@@ -15,13 +15,13 @@ end
 
 class BeatStrategy < IStrategy
   def initialize(sample_path)
-    {}
   end
+end
 
-  class BackgroundStrategy < IStrategy
-    def initialize(sample_path)
-    end
+class BackgroundStrategy < IStrategy
+  def initialize(sample_path)
   end
+end
 end
 
 class MelodyStrategy < IStrategy
