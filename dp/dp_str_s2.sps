@@ -2,6 +2,7 @@
 # point_line: 0
 # point_index: 0
 # --
+# # DP STR S2
 class BackgroundACapella < BackgroundStrategy
   def get
     nil
