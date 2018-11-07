@@ -1,4 +1,4 @@
-# key: dp s voc
+# key: dp str s voc
 # point_line: 0
 # point_index: 0
 # --

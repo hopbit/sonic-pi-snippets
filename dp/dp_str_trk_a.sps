@@ -1,13 +1,13 @@
-# key: dp trk d
+# key: dp str trk a
 # point_line: 0
 # point_index: 0
 # --
-class TrackD < Track
+class TrackA < Track
   def initialize
-    @tempo = TempoDance.new
+    @tempo = TempoDnb.new
     @vocal = VocalDNB.new
     @bg = BackgroundDNB.new
     @melody = MelodyDNB.new
-    @beat = BeatDance.new
+    @beat = BeatDNB.new
   end
 end

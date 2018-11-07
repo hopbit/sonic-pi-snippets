@@ -1,4 +1,4 @@
-# key: dp i 2
+# key: dp str i2
 #
 # point_line: 2
 # point_index: 0

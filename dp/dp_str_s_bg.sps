@@ -1,4 +1,4 @@
-# key: dp s bg
+# key: dp str s bg
 # point_line: 0
 # point_index: 0
 # --

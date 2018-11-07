@@ -1,4 +1,4 @@
-# key: dp s tempo
+# key: dp str s tempo
 # point_line: 0
 # point_index: 0
 # --
