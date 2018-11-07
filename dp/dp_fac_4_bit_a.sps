@@ -13,6 +13,7 @@ end
 class ImpeachThePresident < BeatLoop
   def initialize
     @steps = 16
+    @bpm = 96
     @loop = {
         :drum_bass_hard => [0, 7, 8, 14], # KICK (stopa)
         :drum_snare_hard => [4, 12], # SNARE (werbel)
@@ -26,6 +27,7 @@ end
 class FunkyDrummer < BeatLoop
   def initialize
     @steps = 16
+    @bpm = 96
     @loop = {
         :drum_bass_hard => [1, 3, 7, 11, 14], # KICK (stopa)
         :drum_snare_hard => [5, 8, 10, 12, 13, 16], # SNARE (werbel)
@@ -35,14 +37,4 @@ class FunkyDrummer < BeatLoop
   end
 end
 
-# https://www.youtube.com/watch?v=sVysHOfV8CI&t=5
-class BigBeat < BeatLoop
-  def initialize
-    @steps = 16
-    @loop = {
-        :drum_bass_hard => [1, 4, 7, 9], # KICK (stopa)
-        :drum_snare_hard => [5, 13], # SNARE (werbel)
-        'e:/hopbit/dj/samples/clap/clap707.wav' => [5, 13], # CLAP
-    }
-  end
-end
+

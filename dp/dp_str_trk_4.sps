@@ -4,7 +4,7 @@
 # --
 class Track4 < Track1
   def initialize(samples_path)
-    super(sample_path)
+    super(samples_path)
     @tempo = 132
     @beat = {
         'sample' => :loop_industrial,

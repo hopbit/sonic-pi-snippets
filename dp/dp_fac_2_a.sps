@@ -1,9 +1,9 @@
-# key: dp fac 2
+# key: dp fac 2 a
 # point_line: 0
 # point_index: 0
 # --
-# DP FAC 2: This is a little bit more flexible, but would be nice to have
-# the possibility to somehow store our beat patterns for later performances
+# DP FAC 2 A
+# This is a little bit more flexible solution, let's try add second beat...
 set_volume! 1
 
 use_bpm 96
