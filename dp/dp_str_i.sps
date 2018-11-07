@@ -1,8 +1,13 @@
-# key: dp str i2
-#
-# point_line: 2
+# key: dp str i
+# point_line: 0
 # point_index: 0
 # --
+class IStrategy
+  def get
+    raise "Use subclasses"
+  end
+end
+
 class BeatStrategy < IStrategy
 end
 
