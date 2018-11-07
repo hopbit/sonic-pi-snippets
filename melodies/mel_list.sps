@@ -6,5 +6,5 @@
 # cj - coco jumbo
 # nem - nothing else matters
 # scom - sweet child o' mine
-# * sof - shape of you
+# soy - shape of you
 # * rfiy - river flows in you
