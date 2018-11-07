@@ -3,11 +3,11 @@
 # point_index: 0
 # --
 class TrackC < Track
-  def initialize
-    @tempo = TempoACapella.new
-    @vocal = VocalACapella.new
-    @bg = BackgroundACapella.new
-    @melody = MelodyACapella.new
-    @beat = BeatACapella.new
+  def initialize(sample_path)
+    @tempo = TempoACapella.new(sample_path)
+    @vocal = VocalACapella.new(sample_path)
+    @bg = BackgroundACapella.new(sample_path)
+    @melody = MelodyACapella.new(sample_path)
+    @beat = BeatACapella.new(sample_path)
   end
 end

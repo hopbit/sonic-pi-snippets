@@ -3,6 +3,9 @@
 # point_index: 0
 # --
 class IStrategy
+  def initialize(sample_path)
+    raise "Use subclasses"
+  end
   def get
     raise "Use subclasses"
   end

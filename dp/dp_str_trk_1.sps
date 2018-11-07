@@ -2,6 +2,7 @@
 # point_line: 0
 # point_index: 0
 # --
+# DP STR TRK 1
 class Track1 < Track
   def initialize(samples_path)
     @tempo = 170

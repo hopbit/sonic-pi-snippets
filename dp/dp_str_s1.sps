@@ -4,6 +4,9 @@
 # --
 # DP STR S1
 class BeatACapella < BeatStrategy
+  def initialize(sample_path)
+    @sample_path = sample_path
+  end
   def get
     nil
   end

@@ -2,7 +2,7 @@
 # point_line: 0
 # point_index: 0
 # --
-# Interface
+# DP STR TRK I - Interface
 class Track
 
   attr_reader :beat

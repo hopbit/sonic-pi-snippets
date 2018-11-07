@@ -3,11 +3,11 @@
 # point_index: 0
 # --
 class TrackB < Track
-  def initialize
-    @tempo = TempoDance.new
-    @vocal = VocalDance.new
-    @bg = BackgroundDance.new
-    @melody = MelodyDance.new
-    @beat = BeatDance.new
+  def initialize(sample_path)
+    @tempo = TempoDance.new(sample_path)
+    @vocal= VocalDance.new(sample_path)
+    @bg = BackgroundDance.new(sample_path)
+    @melody = MelodyDance.new(sample_path)
+    @beat = BeatDance.new(sample_path)
   end
 end
