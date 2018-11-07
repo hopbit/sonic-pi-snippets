@@ -6,9 +6,9 @@
 set_volume! 1
 
 live_loop :metronome do
-  use_bpm 92
+  use_bpm 46
   puts "---> Bar: #{tick} <---"
-  32.times do |b|
+  16.times do |b|
     puts "# Beat: #{b}"
     ##| sample :drum_snare_hard
     sleep 1
@@ -16,43 +16,56 @@ live_loop :metronome do
 end
 
 live_loop :beat do
-  ##| stop
+  stop
   sync :metronome
-  use_bpm 92
+  use_bpm 46
   8.times do
-    sample :loop_amen,
+    sample :loop_breakbeat,
            beat_stretch: 4,
            amp: 0.7
     sleep 4
   end
 end
 
-# https://www.youtube.com/watch?v=aPE0sxN6zSc
-background = [[:cs3, 4.0, 2.0], [:fs2, 3.0, 2.0], [:a2, 4.0, 2.0], [:b2, 4.0, 2.0]] * 2
+background = (ring :e5, :r, :g5, :r, :b5, :r, :e6, :r, :b5, :r, :g5, :r) * 2
 live_loop :background do
-  ##| stop
-  use_bpm 92
+  stop
+  use_bpm 46
   sync :metronome
   use_synth :piano
-  background.size.times do |n|
-    play background[n][0], sustain: background[n][1]
-    sleep background[n][2] * 2
+  64.times do
+    play background.tick , release: 1, amp: 0.5
+    sleep 0.25
   end
 end
 
-# Ed Sheeran - Shape Of You
-# https://www.youtube.com/watch?v=aPE0sxN6zSc
-# 2 bars, 8 beats
-melody = [[:db4, 0.5, 0.75], [:e4, 0.5, 0.75], [:db4, 0.5, 0.5]] * 3
-melody += [[:eb, 0.5, 0.75], [:db4, 0.5, 0.75], [:b3, 1.0, 0.5]]
-melody *= 2
+# metallica - nothing else matters (24 beats)
+# metallica - nothing else matters (24 beats)
+melody =  (ring :b, :b, :r, :r, :r, :r, :b, :r)
+melody += (ring :r, :r, :b, :c5,:b, :a,:b, :a)
+melody += (ring :e, :e, :r, :r, :e, :r, :r, :e)
+melody += (ring :e, :e, :r, :g, :e, :c5,:e)
+melody += (ring :fs,:e, :r, :fs,:b, :b, :e, :r, :r)
+melody += (ring :g, :r, :r, :b, :r, :e, :r, :r, :r)
+melody += (ring :e, :e, :r, :b, :e, :g, :d, :a, :fs)
+melody += (ring :c5, :g, :r, :e, :e, :e, :b, :e, :g)
+melody += (ring :d, :a, :r, :fs,:c5, :g, :e, :r, :r)
+melody += (ring :e, :e, :r, :b, :e, :g, :d, :a, :fs)
+melody += (ring :c5, :g, :e, :g, :g, :b, :b, :g, :a)
+melody += (ring :e, :g, :r, :b, :e, :b, :g, :e, :r)
+melody += (ring :g, :b, :r, :e, :b, :g, :e, :r, :r)
 live_loop :melody do
   ##| stop
-  sync :metronome
-  use_bpm 92
+  ##| sync :metronome
+  use_bpm 69
   use_synth :piano
-  melody.size.times do |n|
-    play melody[n][0], decay: melody[n][1]
-    sleep melody[n][2] * 2
-  end
+  ##| 64.times do
+  note = melody.tick
+  play note,
+       release: (note != :r ? 0.75 : 1.75),
+       decay: (note != :r ? 0.75 : 1.75),
+       amp: 0.7
+  sleep 0.5
+  ##| end
 end
+
