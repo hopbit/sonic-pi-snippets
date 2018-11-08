@@ -2,7 +2,7 @@
 # point_line: 0
 # point_index: 0
 # --
-# DP FAC 6: Let's try to create factories that produces beats with different tempo styles
+# DP FAC 7: Let's try to create factories that produces beats with different tempo styles
 set_volume! 1
 
 arg = 'Impeach The President'
@@ -16,8 +16,8 @@ arg = 'Impeach The President'
 # allegro_bf = AllegroBeatFactory.new(ext_samples_path) # BPM 120-138
 # beat = allegro_bf.createBeat(arg)
 
-# presto_bf = PrestoBeatFactory.new(ext_samples_path) # BPM 120-138
-# beat = presto_bf.createBeat(arg)
+presto_bf = PrestoBeatFactory.new(ext_samples_path) # BPM 168-199
+beat = presto_bf.createBeat(arg)
 
 live_loop :beat do
   use_bpm beat.bpm

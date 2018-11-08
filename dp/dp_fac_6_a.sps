@@ -2,7 +2,7 @@
 # point_line: 0
 # point_index: 0
 # --
-# DP FAC 6 A: Simple Beat Factory implementation
+# DP FAC 6 A: Beat Factory Method implementation
 
 class BeatFactoryMethod
 
