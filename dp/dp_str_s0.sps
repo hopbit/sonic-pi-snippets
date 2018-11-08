@@ -22,7 +22,6 @@ class BackgroundStrategy < IStrategy
   def initialize(sample_path)
   end
 end
-end
 
 class MelodyStrategy < IStrategy
   def initialize(sample_path)
