@@ -2,7 +2,9 @@
 # point_line: 0
 # point_index: 0
 # --
-# DP FAC 5: Let's try to extract the logic of creating Beats to simple factory
+# DP FAC 5:
+# Let's try to extract the logic of creating Beats
+# to simple factory
 set_volume! 1
 
 arg = 'Impeach The President'

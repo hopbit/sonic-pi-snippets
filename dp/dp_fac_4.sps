@@ -11,7 +11,7 @@ arg = 'Funky Drummer'
 if arg == 'Impeach The President'
   beat = ImpeachThePresident.new(ext_samples_path)
 elsif arg == 'Funky Drummer'
-  beat == FunkyDrummer.new(ext_samples_path)
+  beat = FunkyDrummer.new(ext_samples_path)
 elsif arg == 'Big Beat'
   beat = BigBeat.new(ext_samples_path)
 elsif arg == 'House Beat'

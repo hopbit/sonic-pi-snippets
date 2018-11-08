@@ -2,7 +2,9 @@
 # point_line: 0
 # point_index: 0
 # --
-# DP FAC 1: Our current beat loop isn't so flexible if we'd like to introduce different beat patterns
+# DP FAC 1:
+# Current beat sampling loop isn't so flexible if we'd like
+# to introduce different beat patterns
 set_volume! 1
 
 live_loop :beat do

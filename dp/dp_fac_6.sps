@@ -2,7 +2,9 @@
 # point_line: 0
 # point_index: 0
 # --
-# DP FAC 6: Let's try to create factories that produces beats with different tempo styles
+# DP FAC 6:
+# Let's try to create factories that produces
+# beats with different tempo styles
 set_volume! 1
 
 arg = 'Impeach The President'

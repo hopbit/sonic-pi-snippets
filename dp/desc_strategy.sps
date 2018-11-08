@@ -1,4 +1,4 @@
-# key: desc str
+# key: desc strategy
 # point_line: 0
 # point_index: 0
 # --

@@ -3,7 +3,8 @@
 # point_index: 0
 # --
 # DP FAC 2 A
-# This is a little bit more flexible solution, let's try add second beat...
+# This is a little bit more flexible solution.
+# Let's try add second beat...
 set_volume! 1
 
 use_bpm 96
