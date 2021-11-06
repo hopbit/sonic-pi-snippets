@@ -9,6 +9,8 @@ set_volume! 1
 beat = ImpeachThePresident.new(ext_samples_path)
 # beat = FunkyDrummer.new(ext_samples_path)
 # beat = BigBeat.new(ext_samples_path)
+# beat = HouseBeat.new(ext_samples_path)
+
 live_loop :beat do
   use_bpm beat.bpm
   beat.steps.times do |step|

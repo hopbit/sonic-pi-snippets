@@ -12,5 +12,7 @@ Linux/Mac OS/Raspberry Pi
 Windows 
 
     load_snippets('c:/dir/of/your/choice/sonic-pi-snippets')
+    
+From that point snippets should be loaded automagically when Sonic Pi starts.
 
 ---- 

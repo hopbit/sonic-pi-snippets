@@ -3,9 +3,10 @@
 # point_index: 0
 # --
 # DP FAC 2 C
-# OK. This is the point, when we'd like to extract below beats to a separate configuration scripts.
-# Apart of that it would be nice to have the possibility to store our beat patterns for later performances
-# and make them easy to use. And You've probably noticed, that the BPM had changed.
+# OK. This is the point, we'd like to extract below beats
+# to a separate configuration scripts as it would be nice
+# to have the possibility make them easy to reuse.
+# And You've probably noticed, that the BPM had changed.
 set_volume! 1
 
 use_bpm 127

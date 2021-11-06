@@ -6,7 +6,7 @@
 # That looks nice, but the code on the screen starts getting to much space on our screen... Let's add another one...
 set_volume! 1
 
-use_bpm 94
+use_bpm 96
 
 # Impeach the president: https://www.youtube.com/watch?v=wqbEsS5kFb8
 # beat_loop = {
